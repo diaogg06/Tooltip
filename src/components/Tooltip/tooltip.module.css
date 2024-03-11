@@ -1,0 +1,48 @@
+
+.container {
+    position: relative;
+    display: inline-flex;
+    user-select: none;
+    margin: 0 10px;
+}
+
+.tooltipContent {
+    color: #ffffff;
+    position: absolute;
+    padding: 12px;
+    font-size: 12px;
+    border-radius: 3px;
+    white-space: nowrap;
+    background-color: #212529;
+    box-shadow: 0 0 0.3rem rgba(0, 0, 0, 0.16);
+}
+
+.arrow {
+    position: absolute;
+    width: 0;
+    height: 0;
+}
+
+.top {
+    bottom: calc(100% + 18px);
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.right {
+    left: calc(100% + 18px);
+    top: 50%;
+    transform: translateY(-50%); 
+}
+
+.left {
+    right: calc(100% + 18px);
+    top: 50%;
+    transform: translateY(-50%); 
+}
+
+.bottom {
+    top: calc(100% + 18px);
+    left: 50%;
+    transform: translateX(-50%);
+}
